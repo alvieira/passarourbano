@@ -10,7 +10,7 @@ import { Oferta } from '../shared/oferta.model';
 })
 export class RestaurantesComponent implements OnInit {
 
-  public ofertas: Oferta[];
+  public ofertas: Oferta[];  
 
   constructor(private ofertasService: OfertasService) { }
 

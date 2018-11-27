@@ -23,7 +23,6 @@ export class TopoComponent implements OnInit {
         debounceTime(1000),
         distinctUntilChanged(),
         switchMap((termo: string) => {
-          console.log('requisição http para a api');
 
           if (termo.trim() === '') {
             return of<Oferta[]>([]);
@@ -31,20 +30,17 @@ export class TopoComponent implements OnInit {
           return this.ofertasService.pesquisaOfertas(termo);
         }),
         catchError((err: any) => {
-          console.log(err);
           return of<Oferta[]>([]);
         })
       )
-    this.ofertas.subscribe((ofertas: Oferta[]) => console.log(ofertas));
+  }
+  
+  public pesquisa(termoDaBusca: string) {
+    this.subjectPesquisa.next(termoDaBusca);
   }
 
-  /**
-   * pesquisa
-event: Event   */
-  public pesquisa(termoDaBusca: string) {
-    console.log('keyup character: ', termoDaBusca);
-    this.subjectPesquisa.next(termoDaBusca);
-
+  public limpaPesquisa(): void {
+    this.subjectPesquisa.next('');
   }
 
 }
