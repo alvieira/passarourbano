@@ -187,46 +187,39 @@
   ],
   "pedidos": [
     {
-      "endereco": "Rua: Campos Sales",
-      "numero": "33",
-      "complemento": "Apto 22",
+      "endereco": "Rua Geraldo Azevedo",
+      "numero": "200",
+      "complemento": "Casa 9",
       "formaPagamento": "dinheiro",
       "id": 1
     },
     {
-      "endereco": "Rua: Jaber",
-      "numero": "888",
-      "complemento": "Casa 7",
-      "formaPagamento": "debito",
+      "endereco": "Avenida das Lágrimas",
+      "numero": "450",
+      "complemento": "Apto 3",
+      "formaPagamento": "dinheiro",
       "id": 2
     },
     {
-      "endereco": "Avenida Luzia",
-      "numero": "400",
+      "endereco": "Rua: Jeremias da Curva",
+      "numero": "100",
       "complemento": "",
-      "formaPagamento": "dinheiro",
+      "formaPagamento": "debito",
       "id": 3
     },
     {
-      "endereco": "Rua: Basiliano Galvez",
-      "numero": "12",
-      "complemento": "Casa 5",
-      "formaPagamento": "debito",
+      "endereco": "Rua Lelé da Cuca",
+      "numero": "300",
+      "complemento": "Showroom 7",
+      "formaPagamento": "dinheiro",
       "id": 4
     },
     {
-      "endereco": "Rua: Zebra Pintada",
-      "numero": "777",
-      "complemento": "",
-      "formaPagamento": "debito",
-      "id": 5
-    },
-    {
-      "endereco": "Rua 7 de outubro",
-      "numero": "55",
-      "complemento": "7 andar",
+      "endereco": "Avenida Luiz Miguel Angel",
+      "numero": "1000",
+      "complemento": "Apto 15",
       "formaPagamento": "dinheiro",
-      "id": 6
+      "id": 5
     }
   ]
 }
