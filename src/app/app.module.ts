@@ -20,6 +20,7 @@ import localePt from '@angular/common/locales/pt';
 import { DescricaoReduzida } from './home/util/descricao-reduzida.pipe';
 import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component';
 import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra-sucesso.component';
+import { CarrinhoService } from './carrinho.service';
 
 // the second parameter 'fr' is optional
 registerLocaleData(localePt, 'pt');
@@ -45,7 +46,7 @@ registerLocaleData(localePt, 'pt');
     HttpModule,
     ReactiveFormsModule        
   ],
-  providers: [ {provide: LOCALE_ID, useValue:'pt'} ],
+  providers: [ CarrinhoService, {provide: LOCALE_ID, useValue:'pt'} ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
